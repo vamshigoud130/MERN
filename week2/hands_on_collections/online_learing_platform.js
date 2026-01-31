@@ -65,6 +65,8 @@ console.log("Users after deactivating user with ID 1:", updatedUsers);
   */
 let publishedCourses = courses.filter(course => course.published === true);
 console.log("Published Courses:", publishedCourses);
+
+
 let sortedCoursesByPrice = [...courses].sort((a, b) => b.price - a.price);
 console.log("Courses sorted by price (high to low):", sortedCoursesByPrice);
 let courseTitlesAndPrices = courses.map(course => ({ title: course.title, price: course.price }));    
@@ -74,9 +76,13 @@ let totalValueOfPublishedCourses = publishedCourses.reduce((total, course) => to
 console.log("Total Value of Published Courses:", totalValueOfPublishedCourses); 
 function addCourseImmutable(newCourse) {
   return [...courses, newCourse];
-}     
+} 
+let newCourse = { id: 104, title: "Python", price: 1199, published: true };
+let updatedCourses = addCourseImmutable(newCourse);
+console.log("Courses after adding new course:", updatedCourses);
 
 
+ 
 /*MODULE 3: SHOPPING CART ENGINE 
   -> Merge cart with courses to get full course info
   -> Calculate total cart amount
