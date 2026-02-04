@@ -1,0 +1,66 @@
+GET http://localhost:3000/user-api/users
+
+###create user
+POST  http://127.0.0.1:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":11,
+    "name":"vamshi",
+    "age":20
+}
+
+
+###update user
+PUT  http://127.0.0.1:3000/user-api/users/id
+Content-Type: application/json
+
+{
+    "id":11,
+    "name":"dimpu",
+    "age":22
+}
+
+###Read a user by id
+GET http://localhost:3000/user-api/users/11
+
+###delete user
+DELETE  http://127.0.0.1:3000/user-api/users/11
+
+
+###read all products
+GET http://localhost:3000/product-api/products
+
+###create products
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":101,
+    "name":"car",
+    "price":4000,
+    "brand":"BMW"
+}
+
+
+###update products
+PUT http://localhost:3000/product-api/products/101
+Content-Type: application/json
+
+{
+    "productId":101,
+    "name":"car",
+    "price":5000,
+    "brand":"mercedes"
+}
+
+
+###get products by id
+GET http://localhost:3000/product-api/products/101
+
+
+###get products by name
+GET http://localhost:3000/product-api/products-name/car
+
+###delete product
+DELETE http://localhost:3000/product-api/products/101

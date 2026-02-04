@@ -1,0 +1,4 @@
+
+function validateTitle(title) {
+
+}
