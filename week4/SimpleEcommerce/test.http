@@ -1,0 +1,62 @@
+### 1. Create a New User
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"test",
+    "email":"test@mail.com",
+    "password":"",
+    "cart":[]
+}
+
+### 2. Check All Users (Get All)
+GET http://localhost:3000/user-api/users
+
+### 3. Get Single User by ID
+GET http://localhost:3000/user-api/users/69817839d1d8cf8b3e88641f
+### 4. Update User Information
+PUT http://localhost:3000/user-api/users/6980fb31ec95d7039cf9aa7f
+Content-Type: application/json
+
+{
+    "name": "PuruReddy",
+    "email": "puru.new@example.com"
+}
+
+### 5. Delete a User
+# This will remove the user from the database.
+DELETE http://localhost:3000/user-api/users/6980fb31ec95d7039cf9aa7f
+
+
+
+### Get all products
+GET http://localhost:3000/product-api/products
+
+### Create a new product
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+  "productName": "MacBook Air",
+  "brand": "Apple",
+  "price": 999
+}
+
+### Update a Product
+PUT http://localhost:3000/product-api/products/
+Content-Type: application/json
+
+{
+    "price": 899,
+    "brand": "Apple"
+}
+
+### Delete a product (Replace ID with one from the GET request)
+DELETE http://localhost:3000/product-api/products/6980fe2ed65816fbc15492a8
+
+
+###add product to cart
+PUT  http://localhost:3000/user-api/user-cart/user-id/69818f8f99afacd349623e74/product-id/697f5aec6e191928d5233416
+
+###get product name in cart
+GET  http://localhost:3000/user-api/user/698187981abdfd8407c60810

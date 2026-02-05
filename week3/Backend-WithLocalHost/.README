@@ -1,0 +1,25 @@
+1.npm init -y
+2.npm install express
+3.npm install mongoose
+About this task:
+Week-3: CRUD APIs using Local Memory & MongoDB
+
+This task focuses on building CRUD (Create, Read, Update, Delete) APIs using backend technologies.
+The implementation is done using two different approaches to understand how data handling works with and
+without a database.
+
+1. Local Memory CRUD
+-------------------
+In this approach, data is stored in local memory using JavaScript arrays.
+No database is used, and the data exists only while the server is running.
+
+Purpose:
+- To understand Express.js routing
+- To learn HTTP methods (GET, POST, PUT, DELETE)
+- To practice handling request body and parameters
+- To focus on backend logic without database dependency
+
+Limitations:
+- Data is temporary
+- Data is lost when the server restarts
+- Not suitable for production use
