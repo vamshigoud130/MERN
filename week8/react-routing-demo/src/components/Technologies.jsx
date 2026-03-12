@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+
 import { Outlet,NavLink } from 'react-router'
 
 function Technologies() {
